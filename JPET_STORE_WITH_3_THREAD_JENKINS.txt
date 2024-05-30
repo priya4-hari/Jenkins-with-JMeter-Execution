@@ -1,0 +1,47 @@
+Started by user HaripriyaJenkins
+Running as SYSTEM
+Building in workspace C:\ProgramData\Jenkins\.jenkins\workspace\JPETSTORE_WITH_3_THREAD
+The recommended git tool is: NONE
+using credential 7f5149e2-1dff-41ce-9a0b-8322dc1fc8ab
+Cloning the remote Git repository
+Cloning repository https://github.com/priya4-hari/Jenkins-with-JMeter-Execution.git
+ > git.exe init C:\ProgramData\Jenkins\.jenkins\workspace\JPETSTORE_WITH_3_THREAD # timeout=10
+Fetching upstream changes from https://github.com/priya4-hari/Jenkins-with-JMeter-Execution.git
+ > git.exe --version # timeout=10
+ > git --version # 'git version 2.45.1.windows.1'
+using GIT_ASKPASS to set credentials 
+ > git.exe fetch --tags --force --progress -- https://github.com/priya4-hari/Jenkins-with-JMeter-Execution.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe config remote.origin.url https://github.com/priya4-hari/Jenkins-with-JMeter-Execution.git # timeout=10
+ > git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git.exe rev-parse "refs/remotes/origin/main^{commit}" # timeout=10
+Checking out Revision f48ac81ecbe3e5b8768f4612e58ca15c8c4eebab (refs/remotes/origin/main)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f f48ac81ecbe3e5b8768f4612e58ca15c8c4eebab # timeout=10
+Commit message: "Jenkins_Report"
+First time build. Skipping changelog.
+[JPETSTORE_WITH_3_THREAD] $ cmd /c call C:\Windows\TEMP\jenkins8247766523034189194.bat
+
+C:\ProgramData\Jenkins\.jenkins\workspace\JPETSTORE_WITH_3_THREAD>C:\Users\admin\OneDrive\Documents\JMETER_NEW\apache-jmeter-5.6.3\bin\jmeter -n -t "JPet_Store_with_3_Thread.jmx" -l JPET_STORE_WITH_3_THREAD_REPORT.jtl 
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+Creating summariser <summary>
+Created the tree successfully using JPet_Store_with_3_Thread.jmx
+Starting standalone test @ 2024 May 30 20:04:09 IST (1717079649565)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+summary +     44 in 00:00:19 =    2.3/s Avg:   595 Min:     1 Max:  6270 Err:     0 (0.00%) Active: 3 Started: 3 Finished: 0
+summary +     40 in 00:00:03 =   13.8/s Avg:   231 Min:     0 Max:  1181 Err:     0 (0.00%) Active: 0 Started: 3 Finished: 3
+summary =     84 in 00:00:22 =    3.8/s Avg:   422 Min:     0 Max:  6270 Err:     0 (0.00%)
+Tidying up ...    @ 2024 May 30 20:04:32 IST (1717079672964)
+... end of run
+Creating parser with percentiles:'0,50,90,95,100,' filterRegex:
+Performance: Recording JMeterCsv reports 'JPET_STORE_WITH_3_THREAD_REPORT.jtl'
+Performance: JMeterCsv copying reports to master, files '[C:\ProgramData\Jenkins\.jenkins\workspace\JPETSTORE_WITH_3_THREAD\JPET_STORE_WITH_3_THREAD_REPORT.jtl]'
+Performance: JMeterCsv parsing local reports '[C:\ProgramData\Jenkins\.jenkins\jobs\JPETSTORE_WITH_3_THREAD\builds\1\performance-reports\JMeterCSV\JPET_STORE_WITH_3_THREAD_REPORT.jtl]'
+Performance: Parsing report file 'C:\ProgramData\Jenkins\.jenkins\jobs\JPETSTORE_WITH_3_THREAD\builds\1\performance-reports\JMeterCSV\JPET_STORE_WITH_3_THREAD_REPORT.jtl' with filterRegex ''.
+Performance: No threshold configured for making the test unstable
+Performance: No threshold configured for making the test failure
+Performance: File JPET_STORE_WITH_3_THREAD_REPORT.jtl reported 0.0% of errors [SUCCESS]. Build status is: SUCCESS
+Finished: SUCCESS

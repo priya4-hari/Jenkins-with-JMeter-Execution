@@ -1,0 +1,65 @@
+Started by user HaripriyaJenkins
+Running as SYSTEM
+Building in workspace C:\ProgramData\Jenkins\.jenkins\workspace\JPET_STORE_LOADTESTING
+The recommended git tool is: NONE
+using credential 7f5149e2-1dff-41ce-9a0b-8322dc1fc8ab
+Cloning the remote Git repository
+Cloning repository https://github.com/priya4-hari/practice_jmeter.git
+ > git.exe init C:\ProgramData\Jenkins\.jenkins\workspace\JPET_STORE_LOADTESTING # timeout=10
+Fetching upstream changes from https://github.com/priya4-hari/practice_jmeter.git
+ > git.exe --version # timeout=10
+ > git --version # 'git version 2.45.1.windows.1'
+using GIT_ASKPASS to set credentials 
+ > git.exe fetch --tags --force --progress -- https://github.com/priya4-hari/practice_jmeter.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe config remote.origin.url https://github.com/priya4-hari/practice_jmeter.git # timeout=10
+ > git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git.exe rev-parse "refs/remotes/origin/main^{commit}" # timeout=10
+Checking out Revision 8c5a6bc8621352acff111398a3cdae5e8c9eabe7 (refs/remotes/origin/main)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 8c5a6bc8621352acff111398a3cdae5e8c9eabe7 # timeout=10
+Commit message: "Add files via upload"
+First time build. Skipping changelog.
+[JPET_STORE_LOADTESTING] $ cmd /c call C:\Windows\TEMP\jenkins14323126492329671098.bat
+
+C:\ProgramData\Jenkins\.jenkins\workspace\JPET_STORE_LOADTESTING>C:\Users\admin\OneDrive\Documents\JMETER_NEW\apache-jmeter-5.6.3\bin\jmeter -n -t "JPet Store LoadTesting.jmx" -l JMETER_LOADTESTING_REPORT.jtl 
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+Creating summariser <summary>
+Created the tree successfully using JPet Store LoadTesting.jmx
+Starting standalone test @ 2024 Jun 5 19:55:49 IST (1717597549590)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+summary +      8 in 00:00:10 =    0.8/s Avg:   115 Min:    26 Max:   172 Err:     0 (0.00%) Active: 5 Started: 5 Finished: 0
+summary +    108 in 00:00:29 =    3.7/s Avg:   100 Min:     0 Max:   744 Err:     0 (0.00%) Active: 5 Started: 5 Finished: 0
+summary =    116 in 00:00:39 =    3.0/s Avg:   101 Min:     0 Max:   744 Err:     0 (0.00%)
+summary +    109 in 00:00:30 =    3.6/s Avg:    93 Min:     0 Max:   994 Err:     0 (0.00%) Active: 5 Started: 5 Finished: 0
+summary =    225 in 00:01:09 =    3.3/s Avg:    97 Min:     0 Max:   994 Err:     0 (0.00%)
+summary +    107 in 00:00:30 =    3.6/s Avg:    99 Min:     0 Max:  1069 Err:     0 (0.00%) Active: 5 Started: 5 Finished: 0
+summary =    332 in 00:01:39 =    3.4/s Avg:    98 Min:     0 Max:  1069 Err:     0 (0.00%)
+summary +    100 in 00:00:30 =    3.4/s Avg:    79 Min:     0 Max:   460 Err:     0 (0.00%) Active: 5 Started: 5 Finished: 0
+summary =    432 in 00:02:09 =    3.4/s Avg:    93 Min:     0 Max:  1069 Err:     0 (0.00%)
+summary +    112 in 00:00:30 =    3.7/s Avg:    89 Min:     0 Max:   861 Err:     0 (0.00%) Active: 5 Started: 5 Finished: 0
+summary =    544 in 00:02:39 =    3.4/s Avg:    93 Min:     0 Max:  1069 Err:     0 (0.00%)
+summary +    107 in 00:00:30 =    3.5/s Avg:    86 Min:     0 Max:   466 Err:     0 (0.00%) Active: 5 Started: 5 Finished: 0
+summary =    651 in 00:03:09 =    3.4/s Avg:    92 Min:     0 Max:  1069 Err:     0 (0.00%)
+summary +    118 in 00:00:30 =    3.9/s Avg:    82 Min:     0 Max:   355 Err:     0 (0.00%) Active: 5 Started: 5 Finished: 0
+summary =    769 in 00:03:39 =    3.5/s Avg:    90 Min:     0 Max:  1069 Err:     0 (0.00%)
+summary +     90 in 00:00:30 =    3.0/s Avg:   114 Min:     0 Max:  1115 Err:     0 (0.00%) Active: 5 Started: 5 Finished: 0
+summary =    859 in 00:04:09 =    3.4/s Avg:    93 Min:     0 Max:  1115 Err:     0 (0.00%)
+summary +     98 in 00:00:30 =    3.3/s Avg:   107 Min:     0 Max:  1850 Err:     0 (0.00%) Active: 5 Started: 5 Finished: 0
+summary =    957 in 00:04:39 =    3.4/s Avg:    94 Min:     0 Max:  1850 Err:     0 (0.00%)
+summary +     86 in 00:00:23 =    3.8/s Avg:   125 Min:     0 Max:   916 Err:     0 (0.00%) Active: 0 Started: 5 Finished: 5
+summary =   1043 in 00:05:01 =    3.5/s Avg:    97 Min:     0 Max:  1850 Err:     0 (0.00%)
+Tidying up ...    @ 2024 Jun 5 20:00:52 IST (1717597852719)
+... end of run
+Creating parser with percentiles:'0,50,90,95,100,' filterRegex:
+Performance: Recording JMeterCsv reports 'JMETER_LOADTESTING_REPORT.jtl'
+Performance: JMeterCsv copying reports to master, files '[C:\ProgramData\Jenkins\.jenkins\workspace\JPET_STORE_LOADTESTING\JMETER_LOADTESTING_REPORT.jtl]'
+Performance: JMeterCsv parsing local reports '[C:\ProgramData\Jenkins\.jenkins\jobs\JPET_STORE_LOADTESTING\builds\1\performance-reports\JMeterCSV\JMETER_LOADTESTING_REPORT.jtl]'
+Performance: Parsing report file 'C:\ProgramData\Jenkins\.jenkins\jobs\JPET_STORE_LOADTESTING\builds\1\performance-reports\JMeterCSV\JMETER_LOADTESTING_REPORT.jtl' with filterRegex ''.
+Performance: No threshold configured for making the test unstable
+Performance: No threshold configured for making the test failure
+Performance: File JMETER_LOADTESTING_REPORT.jtl reported 0.0% of errors [SUCCESS]. Build status is: SUCCESS
+Finished: SUCCESS
